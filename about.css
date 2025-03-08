@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'nunito', sans-serif;
+  
+
+}
+
+#menu{
+    height: 80px;
+    padding: 0 20px;
+
+}
+
+#logo{
+    font-size: 30px;
+    line-height: 80px;
+    color: #003666;
+    float: left;
+    padding-left: 50px;
+    animation-name: fatih;
+    animation-duration: 2s;
+
+}
+
+nav{
+    float: right;
+    line-height: 80px;
+
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: #003666 ;
+}
+
+nav a:hover {
+   color: brown;
+}
+
+nav a:active{
+    color: black;
+}
+
+#anasayfa{
+    height: 200px;
+    background-image: url(./img/c1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+#black{
+    height: 200px;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#icerik{
+    position: absolute;
+    top:50%;
+    left:50%;
+    color: white;
+    transform: translate(-50% , -50%);
+    
+}
+
+.baslik{
+    padding-top: 100px;
+    margin-left: 70px;
+    font-family: "Briem Hand", cursive;
+}
+
+.history hr{
+   margin-left: 70px;
+   border: 1px solid ;
+   font-family: "Briem Hand", cursive;
+}
+
+.resim{
+    width: 500px;
+    height: 400px;
+    background-image: url(./img/c2.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 50px;
+
+}
+
+.container{
+    display: flex;
+  
+}
+
+.Ozel{
+    width: 50%; 
+    height: 100px;
+    border: 1px solid black;
+}
+
+.yazi{
+    width: 50%;
+    height: 100px;
+    margin-left: 40px;
+}
+
+.yazi p{
+    line-height: 1.5;
+    margin-top: 50px;
+    height: 300px;
+    font-family: "Briem Hand", cursive;
+}
+
+
+.ozel{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    padding-top: 60px;
+    height: 300px;
+    padding-bottom: 70px;
+   /* background-color: #a6c8ea;
+   background-image: url("../img/l6.jpg");
+   background-size: cover;
+    background-position: center;*/
+}
+
+#otel{
+    background-image: url(./img/c3.jpg);
+    background-size: cover;
+     background-position: center;
+}
+
+#otel h1{
+    color: #fff;
+    text-align: center;
+    font-family: "Briem Hand", cursive;
+    margin-bottom: -80px;
+    padding-top: 20px;
+}
+.box{
+        flex: 1; 
+        height: 150px;
+        border: 1px solid black;
+        margin: 10px;
+        margin-left: 60px;
+        margin-right: 60px;
+        background-color: antiquewhite;
+        border-radius: 60px;
+}
+
+.box h2 {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.box h4{
+    text-align: center;
+}
+
+
+/*footer*/
+#ozellik{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.conta{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: black;
+    padding: 0 15px;
+
+}
+
+.coll{
+    width: 25%;
+    padding: 0 15px ;
+
+}
+
+.coll h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.coll h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #1e82e9;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.coll ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+
+.coll ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.coll ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+
+}
+
+.coll .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.coll .social-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+}
+
+i{
+    color: #fff;
+}

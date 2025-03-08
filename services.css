@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'nunito', sans-serif;
+
+
+}
+
+#menu {
+    height: 80px;
+    padding: 0 20px;
+
+}
+
+#logo {
+    font-size: 30px;
+    line-height: 80px;
+    color: #003666;
+    float: left;
+    padding-left: 50px;
+    animation-name: fatih;
+    animation-duration: 2s;
+
+}
+
+
+
+nav {
+    float: right;
+    line-height: 80px;
+
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #003666;
+}
+
+nav a:hover {
+
+    color: brown;
+
+
+
+}
+
+nav a:active {
+    color: black;
+}
+
+.giris {
+    background-image: url(./img/b1.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 70vh;
+}
+
+
+.giris .yazi1 {
+    font-family: "Briem Hand", cursive;
+    color: rgb(196, 168, 129);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 21rem;
+    margin-left: 15rem;
+    font-size: 2rem;
+
+}
+
+.container {
+    background-image: url(./img/b3.png);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.container img {
+    margin: 2rem;
+    width: 60vh;
+
+}
+
+.container .yazi2 {
+    color: rgb(121, 44, 5);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    margin-top: -3rem;
+}
+
+.container .yazi2 .yaziii h2 {
+    margin-left: 15rem;
+    font-family: "Dancing Script", cursive;
+}
+
+
+
+.yazi2 .servisler {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+    
+}
+
+.yazi2 .middle,
+.yazi2 .left,
+.yazi2 .right {
+    background-color: rgba(247, 234, 209, 0.3);
+    margin: 1rem;
+    padding: 2rem;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: rgb(121, 44, 5);
+    flex: 1;
+}
+
+.yazi2 .middle h1,
+.yazi2 .left h1,
+.yazi2 .right h1 {
+    color: rgb(152, 47, 47);
+    text-align: center;
+}
+
+.yazi2 .left,
+.yazi2 .middle,
+.yazi2 .right {
+    position: relative;
+    /* Pozisyon ayarı */
+    background-color: rgba(247, 234, 209, 0.3);
+    margin: 1rem;
+    padding: 2rem;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    /* İçeriğin dışarı taşmasını engelle */
+    transition: background-color 0.8s ease;
+    /* Geçiş efekti */
+}
+
+.yazi2 .left h2,
+.yazi2 .middle h2,
+.yazi2 .right h2 {
+    margin-top: -0.3rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.yazi2 .left:hover,
+.yazi2 .middle:hover,
+.yazi2 .right:hover {
+    background-color: rgba(214, 202, 178, 0.638);
+    transform:scale(1.1);
+}
+
+.yazi2 .left:hover h2,
+.yazi2 .middle:hover h2,
+.yazi2 .right:hover h2 {
+    opacity: 1;
+}
+
+.yazi2 .left:hover h1,
+.yazi2 .middle:hover h1,
+.yazi2 .right:hover h1 {
+    opacity: 0;
+}
+
+
+/*footer*/
+#ozellik {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.conta {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: black;
+    padding: 0 15px;
+
+}
+
+.coll {
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.coll h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.coll h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #1e82e9;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.coll ul li:not(:last-child) {
+    margin-bottom: 10px;
+
+}
+
+.coll ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.coll ul li a:hover {
+    color: #fff;
+    padding-left: 8px;
+
+}
+
+.coll .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.coll .social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
+
+i {
+    color: #fff;
+}
